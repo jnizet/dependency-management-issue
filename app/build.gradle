@@ -11,12 +11,6 @@ repositories {
     mavenCentral()
 }
 
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR6"
-    }
-}
-
 dependencies {
     implementation project(':core')
 }
