@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+}
+
+group 'com.example'
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'com.google.guava:guava:29.0-jre'
+}
