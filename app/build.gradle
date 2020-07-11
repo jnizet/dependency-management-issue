@@ -1,5 +1,4 @@
 plugins {
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
 }
 
@@ -11,13 +10,8 @@ repositories {
     mavenCentral()
 }
 
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR6"
-    }
-}
-
 dependencies {
+    implementation(platform("org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR6"))
     implementation project(':core')
 }
 
