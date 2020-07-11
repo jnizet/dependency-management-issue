@@ -19,6 +19,7 @@ dependencyManagement {
 
 dependencies {
     implementation project(':core')
+    implementation 'com.google.guava:guava:29.0-jre'
 }
 
 test {
